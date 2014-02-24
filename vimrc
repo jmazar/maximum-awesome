@@ -38,8 +38,8 @@ set scrolloff=3                                              " show context abov
 set shiftwidth=2                                             " normal mode indentation commands use 2 spaces
 set showcmd
 set smartcase                                                " case-sensitive search if any caps
-set softtabstop=2                                            " insert mode tab and backspace use 2 spaces
-set tabstop=8                                                " actual tabs occupy 8 characters
+set softtabstop=4                                            " insert mode tab and backspace use 2 spaces
+set tabstop=4                                                " actual tabs occupy 8 characters
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
@@ -76,6 +76,7 @@ cmap w!! %!sudo tee > /dev/null %
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
 let g:gitgutter_enabled = 0
+let NERDTreeMinimalUI=1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
